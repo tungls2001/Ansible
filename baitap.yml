@@ -1,6 +1,7 @@
 ---
 - name: baitap
   hosts: all
+  gather_facts: no
 
   tasks:
     - name: dat ip cho loopback
