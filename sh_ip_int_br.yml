@@ -10,4 +10,4 @@
           - show ip int brief
       register: output
 
-    - debug: var=output.stdout
+    - debug: var=output.stdout_lines
