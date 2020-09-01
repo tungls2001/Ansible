@@ -6,8 +6,8 @@
   tasks:
     - name: dat ip cho loopback
       ios_l3_interface:
-        name: loopback {{item.number}}
-        ipv4: 10.0.{{item.number}}.1/24
+        name: loopback {{ item.number }}
+        ipv4: 10.0.{{ item.number }}.1/24
       with_items:
         - { number: 1 }
         - { number: 2 }
