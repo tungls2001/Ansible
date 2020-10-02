@@ -1,6 +1,7 @@
 ---
 - name: Set Ip Loobpack
   hosts: all
+  gather_facts: no
 
   tasks:
     - name: Set loopback IPv4 address
