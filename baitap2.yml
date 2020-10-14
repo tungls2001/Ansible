@@ -1,0 +1,15 @@
+---
+- name: baitap
+  hosts: all
+  gather_facts: no
+
+  tasks:
+    - name: dat ip cho loopback
+      ios_l3_interface:
+        name: "{{ item.number }}"
+        ipv4: 10.0.{{ item.number }}.1/24
+      with_items:
+        - { number: 1, lo: "lo1" }
+        - { number: 2, lo: "lo2" }
+        - { number: 3, lo: "lo3" }
+        
