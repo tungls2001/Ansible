@@ -6,7 +6,7 @@
   tasks:
     - name: Set loopback IPv4 address
       ios_l3_interface:
-        name: loopback 2
+        name: loopback 1
         ipv4: 10.0.1.1/24
 
     - name: Set Ethernet0/1 IPv4 address
