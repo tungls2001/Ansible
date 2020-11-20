@@ -7,12 +7,12 @@
     - name: Create vlan
       ios_vlan:
         vlan_id: "{{ item.number }}"
-        name: {{ item.name }}
+        name: "{{ item.name }}"
         state: present
       with_items:
-        - { number: 50, name: "phong_50" }
-        - { number: 51, name: "phong_51" }
-        - { number: 52, name: "phong_52" }
+        - { number: 50, name: 0 }
+        - { number: 51, name: 1 }
+        - { number: 52, name: 2 }
 
     - name: Show vlan
       ios_command:
