@@ -1,0 +1,10 @@
+---
+- name: demo
+  hosts: Switch
+
+  tasks:
+    - name: Create vlan
+      ios_vlan:
+        vlan_id: 100
+        name: test-vlan
+        state: present
