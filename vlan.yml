@@ -10,9 +10,9 @@
         name: "{{ item.name }}"
         state: present
       with_items:
-        - { number: 50, name: "phong 50" }
-        - { number: 51, name: "phong 51" }
-        - { number: 52, name: "phong 52" }
+        - { number: 50, name: "phong 5000" }
+        - { number: 51, name: "phong 5100" }
+        - { number: 52, name: "phong 5200" }
 
     - name: Show vlan
       ios_command:
